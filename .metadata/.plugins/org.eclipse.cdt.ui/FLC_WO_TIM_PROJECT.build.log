@@ -1,0 +1,81 @@
+17:26:26 **** Build of configuration Debug for project FLC_WO_TIM_PROJECT ****
+make all 
+Building file: ../MCAL/TIMER0/TIM0_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/TIMER0/TIM0_program.d" -MT"MCAL/TIMER0/TIM0_program.o" -c -o "MCAL/TIMER0/TIM0_program.o" "../MCAL/TIMER0/TIM0_program.c"
+Finished building: ../MCAL/TIMER0/TIM0_program.c
+ 
+Building file: ../MCAL/GI/GI_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/GI/GI_prog.d" -MT"MCAL/GI/GI_prog.o" -c -o "MCAL/GI/GI_prog.o" "../MCAL/GI/GI_prog.c"
+Finished building: ../MCAL/GI/GI_prog.c
+ 
+Building file: ../MCAL/EXTI/EXTI_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/EXTI/EXTI_prog.d" -MT"MCAL/EXTI/EXTI_prog.o" -c -o "MCAL/EXTI/EXTI_prog.o" "../MCAL/EXTI/EXTI_prog.c"
+Finished building: ../MCAL/EXTI/EXTI_prog.c
+ 
+Building file: ../MCAL/DIO/DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/DIO/DIO_program.d" -MT"MCAL/DIO/DIO_program.o" -c -o "MCAL/DIO/DIO_program.o" "../MCAL/DIO/DIO_program.c"
+../MCAL/DIO/DIO_program.c: In function 'DIO_u8GetPinValue':
+../MCAL/DIO/DIO_program.c:148: warning: control reaches end of non-void function
+Finished building: ../MCAL/DIO/DIO_program.c
+ 
+Building file: ../MCAL/ADC/ADC_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/ADC/ADC_prog.d" -MT"MCAL/ADC/ADC_prog.o" -c -o "MCAL/ADC/ADC_prog.o" "../MCAL/ADC/ADC_prog.c"
+../MCAL/ADC/ADC_prog.c: In function 'ADC_u16ReadChannel':
+../MCAL/ADC/ADC_prog.c:43: warning: suggest parentheses around comparison in operand of &
+Finished building: ../MCAL/ADC/ADC_prog.c
+ 
+Building file: ../HAL/LCD/LCD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD/LCD_program.d" -MT"HAL/LCD/LCD_program.o" -c -o "HAL/LCD/LCD_program.o" "../HAL/LCD/LCD_program.c"
+In file included from ../HAL/LCD/LCD_program.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/LCD_program.c
+ 
+Building file: ../HAL/KEYPAD/KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/KEYPAD/KEYPAD_program.d" -MT"HAL/KEYPAD/KEYPAD_program.o" -c -o "HAL/KEYPAD/KEYPAD_program.o" "../HAL/KEYPAD/KEYPAD_program.c"
+In file included from ../HAL/KEYPAD/KEYPAD_program.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/KEYPAD/KEYPAD_program.c
+ 
+Building file: ../APP/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
+Finished building: ../APP/main.c
+ 
+Building target: FLC_WO_TIM_PROJECT.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FLC_WO_TIM_PROJECT.map -mmcu=atmega32 -o "FLC_WO_TIM_PROJECT.elf"  ./MCAL/TIMER0/TIM0_program.o  ./MCAL/GI/GI_prog.o  ./MCAL/EXTI/EXTI_prog.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_prog.o  ./HAL/LCD/LCD_program.o  ./HAL/KEYPAD/KEYPAD_program.o  ./APP/main.o   
+Finished building target: FLC_WO_TIM_PROJECT.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FLC_WO_TIM_PROJECT.elf  >"FLC_WO_TIM_PROJECT.lss"
+Finished building: FLC_WO_TIM_PROJECT.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FLC_WO_TIM_PROJECT.elf  "FLC_WO_TIM_PROJECT.hex"
+Finished building: FLC_WO_TIM_PROJECT.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FLC_WO_TIM_PROJECT.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11662 bytes (35.6% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:26:28 Build Finished. 0 errors, 4 warnings. (took 1s.728ms)
+
