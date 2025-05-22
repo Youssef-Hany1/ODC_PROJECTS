@@ -40,7 +40,7 @@ This repository contains multiple AVR microcontroller projects demonstrating key
 ## Author
 
 Youssef Hany  
-Embedded Systems Engineer
+Embedded Systems Developer
 
 ---
 
